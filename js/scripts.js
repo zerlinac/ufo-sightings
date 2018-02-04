@@ -21,7 +21,7 @@ $.getJSON('js/us-states.js', function(jqueryData) {
   };
 
   info.update = function (props) {
-    this._div.innerHTML = '<h4>Number of UFO Sightings 1960 - 2014</h4>' +  (props ?
+    this._div.innerHTML = '<h4>Number of UFO Sightings 1910 - 2014</h4>' +  (props ?
       '<h5>' + props.name + '<br />' + props.sightings + ' sightings'
       : '<h5>Hover over a state</h5>');
   };
