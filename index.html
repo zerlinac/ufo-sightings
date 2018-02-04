@@ -1,0 +1,66 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>UFO sightings across the U.S.</title>
+ 
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P|Roboto|Russo+One" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div id="sidebar">
+    <h3>UFO Sightings Across the U.S.</h3>
+    <h4>i'm not saying it was aliens, but it was definitely aliens <img src="image/ufo.png"></h4>
+      <br />
+    <div class="menu top-nav">
+      <ul>
+        <li id="about" class="nav about active"><a><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> ABOUT THIS MAP</a></li>
+        <li id="metadata" class="nav metadata"><a><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span> DATA AND CREDITS</a></li>
+      </ul>
+    </div>
+
+    <div class="menu tabs about active">
+      <p>From the earliest astronomers to fans of TV shows such as the X-Files and Star Trek, we have always looked to the stars for signs of other intelligent life in the universe. Our imagination catches onto mysterious lights in the night sky, stories of alien abductions, and conspiracy theories behind top secret government sites in the desert.<br /><br />
+      "UFO Sightings Across the U.S." is an interactive map showing the distribution of UFO sightings around the country. These sightings are self-reported and collected by the National UFO Reporting Center.<br /><br />
+      Hover over the map to see the number of UFO sightings reported in that state from 1960 to 2014. To read reports of the sightings, click on the state and follow the link in the pop-up.</p>
+
+    </div>
+
+    <div class="menu tabs metadata">
+        <p>The data used in this map is collected by the <a href="http://www.nuforc.org/index.html">National UFO Reporting Center (NUFORC)</a>, scraped, geolocated, and cleaned by <a href="https://github.com/planetsig/ufo-reports">Sigmond Axel</a><br /><br />
+        Sidebar code was borrowed from NAG-Brooklyn's <a href="https://clhenrick.github.io/greenpoint_williamsburg_toxicity_map/">Greenpoint-Williamsburg ToxiCity Map</a>.<br /><br />
+        This map followed Leaflet's <a href="http://leafletjs.com/examples/choropleth/">Interactive Chloropleth Map tutorial</a>.<br /><br />
+        <img src="image/alien.png">
+        </p>
+
+
+    </div>
+</div>
+
+
+
+  <div id="mapContainer"></div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/us-states.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
